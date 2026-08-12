@@ -1,5 +1,5 @@
-import { ShieldCheck } from 'lucide-react';
-import type { View } from '@/types';
+import { ShieldCheck } from "lucide-react";
+import type { View } from "@/types";
 
 interface FooterProps {
   onNavigate: (view: View) => void;
@@ -20,9 +20,11 @@ export function Footer({ onNavigate }: FooterProps) {
         </div>
 
         <div className="footer-links">
-          <button onClick={() => onNavigate('nsr')}>Marco NSR-10</button>
-          <button onClick={() => onNavigate('diagnosis')}>Evaluación guiada</button>
-          <button onClick={() => onNavigate('about')}>Sobre la guía</button>
+          <button onClick={() => onNavigate("nsr")}>Marco NSR-10</button>
+          <button onClick={() => onNavigate("diagnosis")}>
+            Evaluación guiada
+          </button>
+          <button onClick={() => onNavigate("about")}>Sobre la guía</button>
         </div>
 
         <div className="footer-links footer-social">
